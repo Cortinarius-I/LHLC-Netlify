@@ -1,0 +1,9 @@
+
+title: Little Hearts Learning Collective
+baseurl: ""
+url: ""
+markdown: kramdown
+collections:
+  programs:
+    output: true
+    permalink: /curriculum/:name/

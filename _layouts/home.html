@@ -1,0 +1,17 @@
+
+---
+layout: default
+---
+<section class="hero">
+{% if page.hero_video %}
+<video class="hero-media" autoplay muted loop playsinline>
+<source src="{{ page.hero_video | relative_url }}">
+</video>
+{% elsif page.hero_image %}
+<div class="hero-media" style="background-image:url('{{ page.hero_image | relative_url }}')"></div>
+{% endif %}
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<h1>{{ page.hero_title }}</h1><p>{{ page.hero_subtitle }}</p>
+</div></section>
+<section class="content">{{ content }}</section>
